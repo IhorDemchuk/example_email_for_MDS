@@ -9,32 +9,19 @@
    <meta content="telephone=no" name="format-detection" />
    <title>Browse Abandonment</title>
    <style type="text/css">
+      td {
+         padding: 0;
+      }
+
       td p,
       td a {
          font-family: 'Helvetica Neue', Arial !important;
-      }
-
-      p,
-      a {
          margin: 0;
          color: #000;
       }
 
       a {
          text-decoration: none;
-      }
-
-      .scaleHover {
-         transition: transform .4s;
-      }
-
-      .scaleHover:hover {
-         transform: scale(1.12);
-         box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5), -4px -4px 15px rgba(0, 0, 0, 0.5);
-      }
-
-      .scaleHover:hover .scaleHoverHeader {
-         border-radius: 0 !important;
       }
 
       .promo_btn:hover {
@@ -44,7 +31,16 @@
       }
 
       .referral_btn:hover {
+         color: #000 !important;
          background: #fff !important;
+      }
+
+      .hover_link:hover {
+         text-decoration: none !important;
+      }
+
+      .catalogTableItem * {
+         display: block;
       }
 
       @media (max-width:600px) {
@@ -68,6 +64,10 @@
             text-align: center !important;
          }
 
+         p {
+            font-size: 14px !important;
+         }
+
          .adapt_table,
          .adapt_table>tbody>tr>td,
          .adapt_table>tbody>tr,
@@ -75,27 +75,30 @@
          .adapt_table>tbody>tr>td>img,
          .adapt_table>tbody>tr>td>a>img {
             width: 100% !important;
-            display: block;
+            display: block !important;
             max-width: 600px !important;
-            margin: 0 !important;
+            margin-left: 0 !important;
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
             box-sizing: border-box;
          }
 
          .adapt_padd {
-            padding: 0 20px 30px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
          }
 
-         .catalogTable {
-            padding-bottom: 0 !important;
+         .main_container {
+            padding: 0 !important;
          }
 
-         .lastCatalogTable {
-            padding-bottom: 15px !important;
+         .mb-40 {
+            margin-bottom: 40px !important;
          }
 
-         .scaleHover img {
-            height: auto !important;
-         }
       }
    </style>
 
@@ -103,20 +106,20 @@
    style='width:100%;height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;background-color: #5B3B9C;'>
 
    <table
-      style='margin: 0 auto;max-width: 600px;width: 100%;background-color: #5B3B9C;font-size: 14px;line-height: 24px;color: #11111C;display: block;'
-      cellpadding="0" cellspacing="0">
+      style='margin: 0 auto;padding: 0 20px;max-width: 640px;width: 100%;font-family:"Helvetica Neue", Arial;background-color: #5B3B9C;font-size: 14px;line-height: 24px;color: #11111C;display: block;'
+      cellpadding="0" cellspacing="0" class="main_container">
       <tbody>
          <tr>
             <td>
 
-               <table style="margin: 0 auto 30px;padding-top: 50px!important;">
+               <table style="padding-top: 50px;margin: 0 auto;padding-bottom: 30px;">
                   <tbody>
                      <tr>
                         <td>
                            <a href="https://motiondesign.school/" target="_blank">
                               <img title="Motion Design School" alt="Motion Design School"
                                  src="https://d3k81ch9hvuctc.cloudfront.net/company/T7eJby/images/134934a7-95a6-43d7-8bf9-992701604b95.png"
-                                 width="90" style="width:100%;max-width:90px;">
+                                 width="90" style="width:100%;max-width:90px!important;">
                            </a>
                         </td>
                      </tr>
@@ -153,11 +156,11 @@
                   </tbody>
                </table>
                <table cellpadding="0" cellspacing="0" class="adapt_table adapt_padd catalogTable"
-                  style="background-color: #fff;width: 100%;padding: 0 40px 25px;">
+                  style="background-color: #fff;width: 100%;padding: 0 40px 40px;">
                   <tbody>
                      <tr>
                         <td>
-                           <table cellpadding="0" cellspacing="0" class="adapt_table mb-30 scaleHover"
+                           <table cellpadding="0" cellspacing="0" class="adapt_table mb-40 catalogTableItem"
                               style="display: inline-block;margin-right: 15px;border-radius: 15px;width: 100%; max-width: 250px;">
                               <tbody>
                                  <tr>
@@ -182,13 +185,13 @@
                                  <tr>
                                     <td style="text-align: center;"> <a class="promo_btn"
                                           href="https://motiondesign.school/products/ar-trip"
-                                          style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 100px;font-weight: bold;text-align: center;transition: .4s;position: relative;margin-bottom: 15px;">
+                                          style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 10px;">
                                           Get 70% Discount</a>
                                     </td>
                                  </tr>
                               </tbody>
                            </table>
-                           <table cellpadding="0" cellspacing="0" class="adapt_table mb-30 scaleHover"
+                           <table cellpadding="0" cellspacing="0" class="adapt_table catalogTableItem"
                               style="display: inline-block;border-radius: 15px;width: 100%; max-width: 250px;">
                               <tbody>
                                  <tr>
@@ -214,7 +217,7 @@
                                  <tr>
                                     <td style="text-align: center;"> <a class="promo_btn"
                                           href="https://motiondesign.school/products/richglitch"
-                                          style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 100px;font-weight: bold;text-align: center;transition: .4s;position: relative;margin-bottom: 15px;">
+                                          style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 10px;">
                                           Get 70% Discount</a>
                                     </td>
                                  </tr>
@@ -225,11 +228,11 @@
                   </tbody>
                </table>
                <table cellpadding="0" cellspacing="0" class="adapt_table adapt_padd lastCatalogTable"
-                  style="background-color: #fff;width: 100%;padding: 0 40px 25px;">
+                  style="background-color: #fff;width: 100%;padding: 0 40px 40px;">
                   <tbody>
                      <tr>
                         <td>
-                           <table cellpadding="0" cellspacing="0" class="adapt_table mb-30 scaleHover"
+                           <table cellpadding="0" cellspacing="0" class="adapt_table mb-40 catalogTableItem"
                               style="display: inline-block;margin-right: 15px;border-radius: 15px;width: 100%; max-width: 250px;">
                               <tbody>
                                  <tr>
@@ -255,13 +258,13 @@
                                  <tr>
                                     <td style="text-align: center;"> <a class="promo_btn"
                                           href="https://motiondesign.school/products/wobbly-walking-pigeon"
-                                          style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 100px;font-weight: bold;text-align: center;transition: .4s;position: relative;margin-bottom: 15px;">
+                                          style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 10px;">
                                           Get 70% Discount</a>
                                     </td>
                                  </tr>
                               </tbody>
                            </table>
-                           <table cellpadding="0" cellspacing="0" class="adapt_table mb-30 scaleHover"
+                           <table cellpadding="0" cellspacing="0" class="adapt_table catalogTableItem"
                               style="display: inline-block;border-radius: 15px;width: 100%; max-width: 250px;">
                               <tbody>
                                  <tr>
@@ -289,7 +292,7 @@
                                  <tr>
                                     <td style="text-align: center;"> <a class="promo_btn"
                                           href="https://motiondesign.school/products/animated-typefaces-with-animography"
-                                          style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 100px;font-weight: bold;text-align: center;transition: .4s;position: relative;margin-bottom: 15px;">
+                                          style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 10px;">
                                           Get 70% Discount</a>
                                     </td>
                                  </tr>
@@ -305,7 +308,7 @@
                      <tr>
                         <td style="text-align: center;"> <a class="promo_btn"
                               href="https://motiondesign.school/collections/courses"
-                              style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 10px 55px;display: inline-block;background: #11111C;border-radius: 100px;;font-weight: bold;font-style: normal;line-height: 19px;width: auto;text-align: center;transition: .4s;">
+                              style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 10px;">
                               Check Our Products</a>
                         </td>
                      </tr>
@@ -323,7 +326,8 @@
                               program to get a
                               <strong>50$ credit for your next course</strong> and... a special
                               <strong>50$ gift for your friend, </strong>which you both can use for any course
-                              <a href="https://motiondesign.school/collections/courses">at our
+                              <a href="https://motiondesign.school/collections/courses"
+                                 style="text-decoration: underline;font-weight: 700;" class="hover_link">at our
                                  website</a>. Don&rsquo;t miss the opportunity to get a great holiday present for
                               your friend or colleague.
                            </p>
@@ -337,7 +341,7 @@
                      <tr>
                         <td style="text-align: center;"> <a class="referral_btn"
                               href="https://motiondesign.school/pages/referral-program"
-                              style="background: #20F384;padding: 10px 35px;border: 2px solid #20F384;box-sizing: border-box;border-radius: 50px;font-size: 16px;font-weight: bold;color: #11111C;transition: .4s;display: inline-block;">Start
+                              style="background: #20F384;padding: 8px 25px;border: 2px solid #20F384;border-radius: 10px;font-size: 16px;display: inline-block;">Start
                               Learning Together</a>
                         </td>
                      </tr>
