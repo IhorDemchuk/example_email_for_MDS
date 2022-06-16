@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html style="width:100%;height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;">
+
+<head>
+   <meta charset="utf-8" />
+   <meta content="width=device-width, initial-scale=1" name="viewport" />
+   <meta name="x-apple-disable-message-reformatting" />
+   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+   <meta content="telephone=no" name="format-detection" />
+   <title>Browse Abandonment</title>
+   <style type="text/css">
+      td {
+         padding: 0;
+      }
+
+      td p,
+      td a {
+         font-family: 'Helvetica Neue', Arial !important;
+         margin: 0;
+         color: #000;
+      }
+
+      a {
+         text-decoration: none;
+      }
+
+      .txt_cent {
+         text-align: center;
+      }
+
+      .table_section {
+         background-color: #fff;
+         width: 100%;
+         padding: 0px 40px 30px;
+      }
+
+      .promo_btn {
+         font-size: 16px;
+         color: #FFFFFF;
+         border: 2px solid #11111c;
+         padding: 8px 25px;
+         display: inline-block;
+         background: #11111C;
+         border-radius: 10px;
+         -webkit-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+         transition: all .4s ease-in-out;
+      }
+
+      .catalog_list {
+         padding: 0 40px 0;
+      }
+
+      .catalog_list .list_item {
+         -webkit-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+         transition: all .4s ease-in-out;
+         border-radius: 15px;
+         display: inline-block;
+         width: 48%;
+         max-width: 48%;
+         padding-bottom: 15px;
+         margin-bottom: 15px;
+      }
+
+      .catalog_list .list_item>tbody,
+      .catalog_list .list_item>tbody>tr,
+      .catalog_list .list_item>tbody>tr>td {
+         display: block;
+      }
+
+      .catalog_list .list_item:hover {
+         box-shadow: 0 0 10px #000;
+         transform: translateY(-10px);
+      }
+
+      .catalog_list .list_item .list_item_img {
+         display: block;
+         width: 100%;
+         max-width: 100%;
+         border-radius: 15px 15px 0 0;
+      }
+
+      .catalog_list .list_item .list_item_header {
+         text-align: center;
+         display: block;
+         background-color: #72f486;
+         font-size: 16px;
+         border-radius: 0 0 15px 15px;
+         padding: 12px 0;
+         margin-bottom: 15px;
+      }
+
+      .hover_link {
+         text-decoration: underline;
+         font-weight: 700;
+         color: #0091F5;
+      }
+
+      .referral_btn {
+         background: #20F384;
+         padding: 8px 25px;
+         border: 2px solid #20F384;
+         border-radius: 10px;
+         font-size: 16px;
+         display: inline-block;
+         -webkit-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+         transition: all .4s ease-in-out;
+      }
+
+      .promo_btn:hover {
+         border: 2px solid #000 !important;
+         color: #000 !important;
+         background: #fff !important;
+      }
+
+      .referral_btn:hover {
+         color: #000 !important;
+         background: #fff !important;
+      }
+
+      .hover_link:hover {
+         text-decoration: none !important;
+      }
+
+      .footer_author {
+         margin: 10px 15px;
+      }
+
+      .footer_author_img {
+         display: block;
+         border-radius: 100%;
+         margin-right: 20px;
+         width: 60px;
+      }
+
+      .socials {
+         margin: 55px auto 15px;
+      }
+
+      .socials .socials_item {
+         width: 32px;
+         display: block;
+         margin-right: 10px;
+         border-radius: 100%;
+         -webkit-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+         transition: all .3s ease-in-out;
+      }
+
+      .socials .socials_item_last {
+         margin-right: 0;
+      }
+
+      .socials .socials_item:hover {
+         box-shadow: 0 0 10px #fff;
+      }
+
+      @media (max-width:600px) {
+         .es-mobile-hidden {
+            display: none !important
+         }
+
+         .footer_author {
+            margin: 35px auto 20px !important;
+         }
+
+         .footer_author td {
+            display: block !important;
+         }
+
+         .footer_author img {
+            margin: 0 auto 40px !important;
+         }
+
+         .footer_author p {
+            text-align: center !important;
+         }
+
+         p {
+            font-size: 14px !important;
+         }
+
+         .adapt_table,
+         .adapt_table>tbody>tr>td,
+         .adapt_table>tbody>tr,
+         .adapt_table>tbody,
+         .adapt_table>tbody>tr>td>img,
+         .adapt_table>tbody>tr>td>a>img {
+            width: 100% !important;
+            display: block !important;
+            max-width: 600px !important;
+            margin-left: 0 !important;
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+         }
+
+         .adapt_padd {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+         }
+
+         .main_container {
+            padding: 0 !important;
+         }
+
+         .catalog_list .list_item {
+            width: 100% !important;
+            max-width: 100% !important;
+         }
+
+      }
+   </style>
+
+<body
+   style='width:100%;height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;background-color: #5B3B9C;'>
+
+   <table
+      style='margin: 0 auto;padding: 0 20px;max-width: 640px;width: 100%;font-family:"Helvetica Neue", Arial;background-color: #5B3B9C;font-size: 14px;line-height: 24px;color: #11111C;display: block;'
+      cellpadding="0" cellspacing="0" class="main_container">
+      <tbody>
+         <tr>
+            <td>
+
+               <table style="padding-top: 50px;margin: 0 auto;padding-bottom: 30px;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <a href="https://motiondesign.school/" target="_blank">
+                              <img title="Motion Design School" alt="Motion Design School"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/T7eJby/images/134934a7-95a6-43d7-8bf9-992701604b95.png"
+                                 width="90" style="width:100%;max-width:90px!important;">
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+
+               <table cellpadding="0" cellspacing="0" class="adapt_table">
+                  <tbody>
+                     <tr>
+                        <td> <a>
+                              <img alt="Browse Abandonment" class="kmImage"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/MkyrMJ/images/e51ebc5f-a794-4781-aa76-f3acacc1bc6f.png"
+                                 style="max-width:100%;width:100%;border-radius: 15px 15px 0 0;display: block;"
+                                 title="Browse Abandonment" />
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" class="adapt_padd table_section" style="padding: 30px 40px;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p style="margin: 0 0 14px;">
+                              Happy Holidays, {{ first_name|default:'there' }}!
+                           </p>
+                           <p style="margin: 0;">
+                              Check our most popular courses and masterclasses. You can upgrade your skills, get
+                              inspiration and try new techniques and tricks.
+                           </p>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+
+               <table cellpadding="0" cellspacing="0" class="adapt_padd catalog_list table_section">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <table cellpadding="0" cellspacing="0" class="list_item" style="float: left;">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <a href="https://motiondesign.school/products/ar-trip">
+                                          <img alt="AR Trip Masterclass"
+                                             src="https://cdn.shopify.com/s/files/1/0057/1509/9717/products/VQ0MB9U5WTUPU566YF9E9UUY5PLYAA__AR_Trip_cover_no_logos_compressed_15b46a86-e2e1-41a9-8282-3bc2959bdb0e_x416.jpg?v=1602511650"
+                                             class="list_item_img" title="AR Trip Masterclass" />
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <a href="https://motiondesign.school/products/ar-trip"
+                                          class="list_item_header"><strong>AR Trip
+                                             Masterclass</strong>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="txt_cent">
+                                       <a class="promo_btn list_item_btn"
+                                          href="https://motiondesign.school/products/ar-trip">
+                                          Get 70% Discount</a>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table cellpadding="0" cellspacing="0" class="list_item" style="float: right;">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <a href="https://motiondesign.school/products/richglitch">
+                                          <img alt="Rich Glitch"
+                                             src="https://cdn.shopify.com/s/files/1/0057/1509/9717/products/Cover_Glitch_0792406d-d962-4b6e-b2f0-d69d9c135389_x416.jpg?v=1583250388"
+                                             title="Rich Glitch" class="list_item_img" />
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <a href="https://motiondesign.school/products/richglitch"
+                                          class="list_item_header">
+                                          <strong>Rich Glitch</strong>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="txt_cent">
+                                       <a class="promo_btn list_item_btn"
+                                          href="https://motiondesign.school/products/richglitch">
+                                          Get 70% Discount</a>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+
+               <table cellpadding="0" cellspacing="0" class="catalog_list table_section adapt_padd">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <table cellpadding="0" cellspacing="0" class="list_item" style="float: left;">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <a href="https://motiondesign.school/products/wobbly-walking-pigeon">
+                                          <img alt="Fake 3D Walkcycles in After Effects"
+                                             src="https://cdn.shopify.com/s/files/1/0057/1509/9717/products/photo_2019-09-13_11-31-26_43326a6e-2961-4f89-b87c-8de3ca1e883f_x416.jpg?v=1583250239"
+                                             title="Fake 3D Walkcycles in After Effects" class="list_item_img" /></a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <a href="https://motiondesign.school/products/wobbly-walking-pigeon"
+                                          class="list_item_header">
+                                          <strong>Fake
+                                             3D Walkcycles in After Effects</strong>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="txt_cent">
+                                       <a class="promo_btn list_item_btn"
+                                          href="https://motiondesign.school/products/wobbly-walking-pigeon">
+                                          Get 70% Discount</a>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table cellpadding="0" cellspacing="0" class="list_item" style="float: right;">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <a
+                                          href="https://motiondesign.school/products/animated-typefaces-with-animography">
+                                          <img alt="Animated Typefaces with Animography"
+                                             src="https://cdn.shopify.com/s/files/1/0057/1509/9717/products/CourseCover03_544x.jpg?v=1604414131"
+                                             title="Animated Typefaces with Animography" class="list_item_img" />
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <a href="https://motiondesign.school/products/animated-typefaces-with-animography"
+                                          class="list_item_header">
+                                          <strong>Animated
+                                             Typefaces with Animography</strong>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="txt_cent">
+                                       <a class="promo_btn list_item_btn"
+                                          href="https://motiondesign.school/products/animated-typefaces-with-animography">
+                                          Get 70% Discount</a>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" class="table_section adapt_padd">
+                  <tbody>
+                     <tr>
+                        <td class="txt_cent"> <a class="promo_btn"
+                              href="https://motiondesign.school/collections/courses"
+                              style="font-size: 16px;color: #FFFFFF;border: 2px solid #11111c;padding: 8px 25px;display: inline-block;background: #11111C;border-radius: 10px;">
+                              Check Our Products</a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+
+               <table cellpadding="0" cellspacing="0" class="adapt_padd table_section">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p style="margin: 0;">
+                              Your learning experience can be even better when studying together with friends. Now is a
+                              perfect time to gift your friends with something useful. Participate in our referral
+                              program to get a
+                              <strong>50$ credit for your next course</strong> and... a special
+                              <strong>50$ gift for your friend, </strong>which you both can use for any course
+                              <a href="https://motiondesign.school/collections/courses" class="hover_link">at our
+                                 website</a>. Don&rsquo;t miss the opportunity to get a great holiday present for
+                              your friend or colleague.
+                           </p>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" class="adapt_padd table_section">
+                  <tbody>
+                     <tr>
+                        <td class="txt_cent">
+                           <a class="referral_btn" href="https://motiondesign.school/pages/referral-program">Start
+                              Learning Together</a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" class="adapt_padd table_section"
+                  style="border-radius: 0 0 15px 15px;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p style="margin: 0 0 14px;">
+                              Grab your Christmas deal from Motion Design School while it is still available!
+                           </p>
+                           <p style="margin: 0;">
+                              Stay tuned!
+                           </p>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" class="es-mobile-hidden">
+                  <tbody>
+                     <tr>
+                        <td style="padding-left: 35px;">
+                           <img alt="Motion Design School" class="adapt-img"
+                              src="https://nix.stripocdn.email/content/guids/CABINET_e656d66697a40301af14fbec7e00b068/images/72101585915674570.png"
+                              style="display:block;" title="Motion Design School" width="20" />
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" class="footer_author">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <img alt="Iaroslav"
+                              src="https://d3k81ch9hvuctc.cloudfront.net/company/T7eJby/images/153a5ea4-eb9a-4af6-ab5a-26b565e595d1.jpeg"
+                              title="Iaroslav" class="footer_author_img" />
+                        </td>
+                        <td>
+                           <p style="color:#FFFFFF;"> <strong>Iaroslav</strong> from Motion Design School
+                           </p>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" class="socials">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <a href="https://www.facebook.com/motiondesignschool/" target="_blank">
+                              <img alt="Fb"
+                                 src="https://nix.stripocdn.email/content/assets/img/social-icons/circle-white/facebook-circle-white.png"
+                                 title="Facebook" class="socials_item" />
+                           </a>
+                        </td>
+                        <td> <a href="https://www.instagram.com/motiondesignschool/" target="_blank">
+                              <img alt="Inst"
+                                 src="https://nix.stripocdn.email/content/assets/img/social-icons/circle-white/instagram-circle-white.png"
+                                 title="Instagram" class="socials_item" />
+                           </a>
+                        </td>
+                        <td> <a href="https://www.youtube.com/channel/UC-L0yvYPpGQZD3PHDLKiUpg" target="_blank">
+                              <img alt="Yt"
+                                 src="https://nix.stripocdn.email/content/assets/img/social-icons/circle-white/youtube-circle-white.png"
+                                 title="Youtube" class="socials_item" />
+                           </a>
+                        </td>
+                        <td> <a href="https://www.behance.net/yaroflasher" target="_blank">
+                              <img alt="Be"
+                                 src="https://nix.stripocdn.email/content/assets/img/social-icons/circle-white/behance-circle-white.png"
+                                 title="Behance" class="socials_item" />
+                           </a>
+                        </td>
+                        <td> <a href="https://dribbble.com/motiondesignschool" target="_blank">
+                              <img alt="Db"
+                                 src="https://nix.stripocdn.email/content/assets/img/social-icons/circle-white/dribbble-circle-white.png"
+                                 title="Dribbble" class="socials_item" />
+                           </a>
+                        </td>
+                        <td> <a href="https://vimeo.com/motiondesignschool" target="_blank">
+                              <img alt="V"
+                                 src="https://nix.stripocdn.email/content/assets/img/social-icons/circle-white/vimeo-circle-white.png"
+                                 title="Vimeo" class="socials_item" />
+                           </a>
+                        </td>
+                        <td> <a href="https://space.bilibili.com/478307446/" target="_blank">
+                              <img alt="bilibili"
+                                 src="https://nix.stripocdn.email/content/guids/CABINET_b295940cab2de72299525ddb97ddd2c9/images/64281582743627495.png"
+                                 title="bilibili" class="socials_item socials_item_last" />
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table style="margin: 0 auto 10px; color: #fff; text-align: center;" cellpadding="0" cellspacing="0">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p style="color: #fff;">Add our email <a href="mailto:create@motiondesign.school"
+                                 style="color: #fff;">create@motiondesign.school</a> <br>
+                              to your address book</p>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" style="margin: 0 auto; color: #fff; text-align: center;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p style="margin: 0; color:#FFFFFF;">
+                              <strong>Motion Design School</strong> <br />
+                              2727 Mill Ave, Brooklyn, New York, 11234
+                              <br />
+                              <a href="mailto:support@motiondesign.school"
+                                 style="color: #20F384;">support@motiondesign.school</a>
+                           </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td> <a href="{% unsubscribe_link %}"
+                              style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;font-size:12px;text-decoration:underline;color:#FFFFFF !important;margin-top: 55px;display: block;margin-bottom: 90px;">
+                              Unsubscribe me</a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</body>
+
+</html>
